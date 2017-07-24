@@ -41,8 +41,27 @@ fun main(args: Array<String>) {
 
     val arr = arrayOf(1,2,3,4)
 
+    for (item in arr) {
+        println(item)
+    }
+
     val b = Array(4, { i -> (i * 2) })
 
     println(arr[0])
     println(b[1])
+
+
+    val x = 5
+    when(x) {
+        in 1..10 -> println("x is in the range")
+        else -> println("")
+    }
+
+
+    var person : Person = Person()
+
+    person.lastName = "Keith"
+    person.no = 9
+
+    println(person.lastName + person.no)
 }
